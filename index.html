@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 1 to 67</title>
+    <style>
+        .image {
+            display: inline-block;
+        }
+        
+        #img {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #table {
+            display: none;
+        }
+        
+        #hover {
+            display: none;
+        }
+        
+        #counter {
+            display: none;
+        }
+        
+        #signup {
+            display: none;
+        }
+        
+        #read {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 43 to 48 -->
+    <div class="container">
+        <div class="content" id="img">
+        </div>
+        <div class="content" id="table">
+            <table>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Ahmed</td>
+                    <td>10</td>
+                    <td><button onclick="del(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aashir</td>
+                    <td>11</td>
+                    <td><button onclick="del(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ali</td>
+                    <td>12</td>
+                    <td><button onclick="del(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Hamza</td>
+                    <td>9</td>
+                    <td><button onclick="del(this)">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="content" id="hover">
+            <div class='image'><img onmouseover="m_over(this)" onmouseout="m_out(this)" style="width: 400px;height: 400px;" src='https://images.unsplash.com/photo-1580414057403-c5f451f30e1c?ixlib=rb-1.2.1&w=1000&q=80' alt='' class='image'>
+                <div class=''>
+                </div>
+            </div><br>
+        </div>
+        <div class="content" id="counter">
+            <button onclick="add()">Increase</button>
+            <h1 id="para">0</h1>
+            <button onclick="sub()">Decrease</button>
+            <br>
+        </div>
+
+    </div>
+
+    <!-- Assignment # 49-52  -->
+    <!-- Signup Form -->
+    <form id="signup">
+        <div>
+            <label for="">Name:</label><input type="text" id="name"><br>
+            <label for="">password:</label><input type="password" id="password"><br>
+            <label for="">email:</label><input type="email" id="email"><br>
+            <input type="submit" onclick="data()" value="submit">
+        </div>
+    </form>
+
+    <div id="read">
+        <div>
+            <img src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width: 400px; height: 400px;" alt="">
+        </div>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<a href="javascript:void(0);" onclick="wide()">Read More</a></p>
+        <div>
+            <label>First Name: </label><input type="text" id="first_name"><br>
+            <label>Last Name:</label><input type="text" id="last_name"><br>
+            <label>Number</label><input type="number" id="number2"><br>
+        </div>
+        <button onclick="submit();">submit</button>
+
+        <div>
+            <table class="table">
+                <p id="one"></p>
+                <p id="two"></p>
+                <p id="three"></p>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
